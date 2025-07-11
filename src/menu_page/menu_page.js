@@ -7,10 +7,16 @@ import "./menu_page_style.css";
 function menuPageLoad () {
     let mainContentContainer = document.querySelector("#content");
     mainContentContainer.innerHTML = "";
+    let menuPageContainer = document.createElement("div");
+    menuPageContainer.id = "menu";
     let menuItemContainerOne = document.createElement("div");
+    menuItemContainerOne.classList.add("menu_item");
     let menuItemContainerTwo = document.createElement("div");
+    menuItemContainerTwo.classList.add("menu_item");
     let menuItemContainerThree = document.createElement("div");
+    menuItemContainerThree.classList.add("menu_item");
     let menuItemContainerFour = document.createElement("div");
+    menuItemContainerFour.classList.add("menu_item");
     let menuItemImageOne = document.createElement("img");
     let menuItemNameOne = document.createElement("para");
     let menuItemPriceOne = document.createElement("para");
@@ -43,7 +49,8 @@ function menuPageLoad () {
     menuItemContainerTwo.append(menuItemImageTwo, menuItemNameTwo, menuItemPriceTwo);
     menuItemContainerThree.append(menuItemImageThree, menuItemNameThree, menuItemPriceThree);
     menuItemContainerFour.append(menuItemImageFour, menuItemNameFour, menuItemPriceFour);
-    mainContentContainer.append(menuItemContainerOne, menuItemContainerTwo, menuItemContainerThree, menuItemContainerFour);
+    menuPageContainer.append(menuItemContainerOne, menuItemContainerTwo, menuItemContainerThree, menuItemContainerFour);
+    mainContentContainer.append(menuPageContainer);
 }
 
 export { menuPageLoad }
