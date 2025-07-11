@@ -2,6 +2,7 @@ import menuImageOne from "./menu_img1.jpg";
 import menuImageTwo from "./menu_img2.jpg";
 import menuImageThree from "./menu_img3.jpg";
 import menuImageFour from "./menu_img4.jpg";
+import "./menu_page_style.css";
 
 function menuPageLoad () {
     let mainContentContainer = document.querySelector("#content");

@@ -1,8 +1,11 @@
 import mainImage from "./pepperoni_pizza.jpg";
+import "./main_page_style.css";
 
 function mainPageLoad () {
     let mainContentImage = document.createElement("img");
     let mainContentContainer = document.querySelector("#content");
+    let mainPageContainer = document.createElement("div");
+    mainPageContainer.id = "main";
     let mainContentHeader = document.createElement("h2");
     let mainContentPara = document.createElement("p");
     mainContentHeader.textContent = "About us";
@@ -13,7 +16,8 @@ function mainPageLoad () {
                 Nunc sit amet ante eget sapien bibendum pellentesque non vel tortor. Morbi ut mattis sem. Quisque varius ac nisi nec vehicula. Vestibulum feugiat ante vel sodales finibus.
                 Cras sodales vel turpis vel porttitor. Proin sit amet tristique mi. Donec a rutrum quam.`;
     mainContentContainer.innerHTML = "";
-    mainContentContainer.append(mainContentImage, mainContentHeader, mainContentPara);
+    mainPageContainer.append(mainContentImage, mainContentHeader, mainContentPara);
+    mainContentContainer.append(mainPageContainer);
 }
 
 export { mainPageLoad }
