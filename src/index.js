@@ -1,6 +1,7 @@
 import { mainPageLoad } from "./main_page/main_page.js";
 import { menuPageLoad } from "./menu_page/menu_page.js";
 import { contactPageLoad } from "./contact_page/contact_page.js";
+import "./styles.css";
 
 mainPageLoad()
 
